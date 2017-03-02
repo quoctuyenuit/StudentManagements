@@ -51,7 +51,7 @@ namespace StudentManagement
 
         private void btn_ScoreBoard_Click(object sender, EventArgs e)
         {
-            showFrame(navigationPage_ScoreBoardDetail);
+            showFrame(á);
         }
 
         private void btn_AddStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -79,28 +79,90 @@ namespace StudentManagement
             showFrame(navigationPage_FindStudent);
         }
 
+        //=======================================================================================
+        //StudentList
+        private void btn_DetailStudent_StudentList_Click(object sender, EventArgs e)
+        {
+            navigationPage_Sub_StudentDetail_Edit.Hide();
+            navigationPage_Sub_StudentDetail.Show();
+            btn_Edit_StudentDetail.Show();
+            btn_Apply_StudentDetail.Hide();
+            showFrame(navigationPage_StudentDetail);
+            navigationPage_Sub_StudentDetail_Edit.Hide();
+            navigationPage_Sub_StudentDetail.Show();
+        }
+
+        private void btn_DeleteStudent_StudentList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_FilterStudent_StudentList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //=======================================================================================
+        //StudentDetail
         private void btn_Edit_StudentDetail_Click(object sender, EventArgs e)
         {
-            navigationPage_DetailStudent.Hide();
-            navigationPage_DetailStudent_Edit.Show();
+            navigationPage_Sub_StudentDetail.Hide();
+            navigationPage_Sub_StudentDetail_Edit.Show();
+            btn_Edit_StudentDetail.Hide();
+            btn_Apply_StudentDetail.Show();
         }
 
-        private void btn_DetailStudent_Click(object sender, EventArgs e)
+        private void btn_Apply_StudentDetail_Click(object sender, EventArgs e)
         {
-            showFrame(navigationPage_StudentDetail);
+            navigationPage_Sub_StudentDetail_Edit.Hide();
+            navigationPage_Sub_StudentDetail.Show();
+            btn_Edit_StudentDetail.Show();
+            btn_Apply_StudentDetail.Hide();
+        }
+        
+        //=======================================================================================
+        //ClassDetail
+        private void btn_Edit_ClassDetail_Click(object sender, EventArgs e)
+        {
+            btn_Edit_ClassDetail.Hide();
+            btn_Apply_ClassDetail.Show();
+            navigationPage_Sub_ClassDetail.Hide();
+            navigationPage_Sub_ClassDetail_Edit.Show();
         }
 
-        private void btn_Edit_DetailClass_Click(object sender, EventArgs e)
+        private void btn_Apply_ClassDetail_Click(object sender, EventArgs e)
         {
-            btn_Edit_DetailClass.Hide();
-            btn_Apply_DetailClass.Show();
+            btn_Apply_ClassDetail.Hide();
+            btn_Edit_ClassDetail.Show();
+            navigationPage_Sub_ClassDetail.Show();
+            navigationPage_Sub_ClassDetail_Edit.Hide();
+        }
+        //=======================================================================================
+        //ClassList
+        private void btn_Detail_ClassList_Click(object sender, EventArgs e)
+        {
+            navigationPage_Sub_ClassDetail.Show();
+            navigationPage_Sub_ClassDetail_Edit.Hide();
+            showFrame(navigationPage_ClassDetail);
         }
 
-        private void btn_Apply_DetailClass_Click(object sender, EventArgs e)
+        private void btn_Delete_ClassList_Click(object sender, EventArgs e)
         {
-            btn_Apply_DetailClass.Hide();
-            btn_Edit_DetailClass.Show();
+
         }
+        //=======================================================================================
+        //ScoreBoard List
+
+        private void btn_Delete_ScoreBoardList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Watch_ScoreBoardList_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
