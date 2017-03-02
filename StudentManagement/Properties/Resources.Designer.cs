@@ -63,9 +63,9 @@ namespace StudentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1 {
+        internal static System.Drawing.Bitmap background {
             get {
-                object obj = ResourceManager.GetObject("1", resourceCulture);
+                object obj = ResourceManager.GetObject("background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace StudentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _128_512 {
+        internal static System.Drawing.Bitmap changeRules_icon {
             get {
-                object obj = ResourceManager.GetObject("128-512", resourceCulture);
+                object obj = ResourceManager.GetObject("changeRules_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,19 +83,9 @@ namespace StudentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _14250_g {
+        internal static System.Drawing.Bitmap class_icon {
             get {
-                object obj = ResourceManager.GetObject("14250_g", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap class2 {
-            get {
-                object obj = ResourceManager.GetObject("class2", resourceCulture);
+                object obj = ResourceManager.GetObject("class_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,9 @@ namespace StudentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap IconAddStudentSmall {
+        internal static System.Drawing.Bitmap report_icon {
             get {
-                object obj = ResourceManager.GetObject("IconAddStudentSmall", resourceCulture);
+                object obj = ResourceManager.GetObject("report_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +123,9 @@ namespace StudentManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap report1 {
+        internal static System.Drawing.Bitmap StudentIcon {
             get {
-                object obj = ResourceManager.GetObject("report1", resourceCulture);
+                object obj = ResourceManager.GetObject("StudentIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

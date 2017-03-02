@@ -22,76 +22,85 @@ namespace StudentManagement
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "DevExpress Style";
             btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-           // navigationPage_Home.Show();
+            // navigationPage_Home.Show();
         }
 
-
-
-        private void btn_AddStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void showFrame(Control navigationPage)
         {
-            btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            foreach (Control ctrl in navigationFrameMain.Controls)
+            foreach (Control ctrl in navigationFrame_Main.Controls)
             {
                 ctrl.Hide();
             }
-            navigationPage_AddStudent.Show();
-        }
-
-        private void btn_AddClass_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            foreach (Control ctrl in navigationFrameMain.Controls)
-            {
-                ctrl.Hide();
-            }
-            navigationPage_Home.Show();
+            navigationPage.Show();
         }
 
         private void btn_Home_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            foreach (Control ctrl in navigationFrameMain.Controls)
-            {
-                ctrl.Hide();
-            }
-            navigationPage_Home.Show();
+            showFrame(navigationPage_Home);
         }
 
         private void btn_Student_Click(object sender, EventArgs e)
         {
-            btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            foreach (Control ctrl in navigationFrameMain.Controls)
-            {
-                ctrl.Hide();
-            }
-            navigationPage_StudentList.Show();
+            showFrame(navigationPage_StudentList);
         }
 
         private void btn_Class_Click(object sender, EventArgs e)
         {
-            btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Always;
-            foreach (Control ctrl in navigationFrameMain.Controls)
-            {
-                ctrl.Hide();
-            }
-            navigationPage_ClassList.Show();
+            showFrame(navigationPage_ClassList);
         }
 
-       
-        private void btn_LookStudentDetail_Click(object sender, EventArgs e)
+        private void btn_ScoreBoard_Click(object sender, EventArgs e)
         {
-            btn_Done.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
-            foreach (Control ctrl in navigationFrameMain.Controls)
-            {
-                ctrl.Show();
-            }
-            navigationPage_DetailStudent.Show();
+            showFrame(navigationPage_ScoreBoardDetail);
         }
-        
 
+        private void btn_AddStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            showFrame(navigationPage_AddStudent);
+        }
 
+        private void btn_AddClass_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            showFrame(navigationPage_AddClass);
+        }
 
+        private void btn_CreateReport_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            showFrame(navigationPage_CreateReport);
+        }
 
+        private void btn_ChangeRules_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            showFrame(navigationPage_ChangeRules);
+        }
+
+        private void btn_FindStudent_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            showFrame(navigationPage_FindStudent);
+        }
+
+        private void btn_Edit_StudentDetail_Click(object sender, EventArgs e)
+        {
+            navigationPage_DetailStudent.Hide();
+            navigationPage_DetailStudent_Edit.Show();
+        }
+
+        private void btn_DetailStudent_Click(object sender, EventArgs e)
+        {
+            showFrame(navigationPage_StudentDetail);
+        }
+
+        private void btn_Edit_DetailClass_Click(object sender, EventArgs e)
+        {
+            btn_Edit_DetailClass.Hide();
+            btn_Apply_DetailClass.Show();
+        }
+
+        private void btn_Apply_DetailClass_Click(object sender, EventArgs e)
+        {
+            btn_Apply_DetailClass.Hide();
+            btn_Edit_DetailClass.Show();
+        }
 
 
 
